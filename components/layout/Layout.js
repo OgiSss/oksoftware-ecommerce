@@ -1,13 +1,24 @@
-import MainNavigation from './MainNavigation'
-import classes from './Layout.module.css'
+import { MainNavigation } from './MainNavigation'
+import withTheme from '../../hocs/withTheme/index'
 
-function Layout({ children }) {
+export function Layout({ children }) {
     return (
-        <div>
-            <MainNavigation />
-            <main className={classes.main}>{children}</main>
-        </div>
+        <>
+            <div className="main-wrapper">
+                <MainNavigation />
+                <main>{children}</main>
+            </div>
+            <style jsx>
+                {`
+                    .main-wrapper {
+                        background-color: var(--palette-secondary-dark);
+                        margin: 2rem;
+                        border-radius: 25px;
+                    }
+                `}
+            </style>
+        </>
     )
 }
 
-export default Layout
+export default withTheme(Layout)

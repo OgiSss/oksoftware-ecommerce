@@ -1,4 +1,3 @@
-
 const theme = {
     shadows: [
         'none',
@@ -25,14 +24,14 @@ const theme = {
         '0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)',
         '0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)',
         '0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)',
-        '0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)'
+        '0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)',
     ],
     transitions: {
         easing: {
             easeInOut: 'cubic-bezier(0.4, 0, 0.2, 1)',
             easeOut: 'cubic-bezier(0.0, 0, 0.2, 1)',
             easeIn: 'cubic-bezier(0.4, 0, 1, 1)',
-            sharp: 'cubic-bezier(0.4, 0, 0.6, 1)'
+            sharp: 'cubic-bezier(0.4, 0, 0.6, 1)',
         },
         duration: {
             shortest: 150,
@@ -41,11 +40,11 @@ const theme = {
             standard: 300,
             complex: 375,
             enteringScreen: 225,
-            leavingScreen: 195
-        }
+            leavingScreen: 195,
+        },
     },
     shape: {
-        borderRadius: 4
+        borderRadius: 4,
     },
     zIndex: {
         mobileStepper: 1000,
@@ -54,13 +53,13 @@ const theme = {
         drawer: 1200,
         modal: 1300,
         snackbar: 1400,
-        tooltip: 1500
+        tooltip: 1500,
     },
     typography: {
         fontWeightLight: 300,
         fontWeightRegular: 400,
         fontWeightMedium: 500,
-        fontWeightBold: 700
+        fontWeightBold: 700,
     },
     /**
      * MEMO: could follow Material UI in other theming options
@@ -78,7 +77,7 @@ const theme = {
         medium: '900px', // 56.25em
         large: '1300px', // 80em
         larger: '1462.5px', // 90em
-        largest: '1500px' // 97em
+        largest: '1500px', // 97em
     },
     mediaQueries: {
         smallest: 'only screen and (max-width: 275px)',
@@ -87,13 +86,13 @@ const theme = {
         medium: 'only screen and (max-width: 900px)',
         large: 'only screen and (max-width: 1300px)',
         larger: 'only screen and (max-width: 1462.5px)',
-        largest: 'only screen and (max-width: 1500px)'
+        largest: 'only screen and (max-width: 1500px)',
     },
     custom: {
         layout: {
-            appBarHeight: 56
-        }
-    }
-};
+            appBarHeight: 56,
+        },
+    },
+}
 
-export default theme;
+export default theme

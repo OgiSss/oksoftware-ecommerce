@@ -1,6 +1,4 @@
+const checkEmptyObject = (targetObject) =>
+    Object.keys(targetObject).length === 0 && targetObject.constructor === Object
 
-const checkEmptyObject = targetObject => {
-  return Object.keys(targetObject).length === 0 && targetObject.constructor === Object;
-};
-
-export default checkEmptyObject;
+export default checkEmptyObject

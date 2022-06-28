@@ -16,6 +16,14 @@ class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta name="supported-color-schemes" content="dark light" />
                     <meta name="color-scheme" content="dark light" />
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Montserrat&display=optional"
+                        rel="stylesheet"
+                    />
+                    <link
+                        href="https://fonts.googleapis.com/css?family=sans-serif&display=optional"
+                        rel="stylesheet"
+                    />
                     {/**
                      * MEMO: inspired by https://web.dev/prefers-color-scheme/#activating-dark-mode-in-the-operating-system.
                      * for now we take the approach https://github.com/GoogleChromeLabs/dark-mode-toggle#-using-a-css-class-that-you-toggle
@@ -80,7 +88,7 @@ class MyDocument extends Document {
             }} /> */}
                     {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
                 </Head>
-                <body className={CLASS_NAMES.DARK}>
+                <body className={CLASS_NAMES.LIGHT}>
                     {/* MEMO: inspired by https://github.com/donavon/use-dark-mode#that-flash */}
                     {/* <Script>
             {() => {
