@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { MdLocalGroceryStore } from 'react-icons/md'
 
 const PROFILE_WIDTH = 44
 const PROFILE_HEIGHT = 44
@@ -47,6 +48,11 @@ export function MainNavigation() {
                         </li>
                     ))}
                 </ul>
+
+                <div className="basket">
+                    <MdLocalGroceryStore size={20} />
+                    <span>0</span>
+                </div>
             </header>
 
             <style jsx>
@@ -73,7 +79,6 @@ export function MainNavigation() {
                         margin: 0;
                         padding: 0;
                         display: flex;
-                        align-items: baseline;
                     }
 
                     .header li {
@@ -93,6 +98,21 @@ export function MainNavigation() {
                     .navigation :global(a:active),
                     .navigation :global(a.active) {
                         color: var(--palette-secondary-main);
+                    }
+
+                    .basket {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .basket:hover {
+                        color: var(--palette-primary-main);
+                    }
+
+                    .basket span {
+                        font-size: 1.3rem;
+                        cursor: pointer;
                     }
                 `}
             </style>

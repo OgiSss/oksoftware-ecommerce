@@ -15,13 +15,10 @@ class MyDocument extends Document {
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="supported-color-schemes" content="dark light" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <meta name="color-scheme" content="dark light" />
                     <link
-                        href="https://fonts.googleapis.com/css?family=Montserrat&display=optional"
-                        rel="stylesheet"
-                    />
-                    <link
-                        href="https://fonts.googleapis.com/css?family=sans-serif&display=optional"
+                        href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=optional"
                         rel="stylesheet"
                     />
                     {/**

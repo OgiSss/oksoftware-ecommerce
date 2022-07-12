@@ -1,25 +1,30 @@
+import SwiperInternal from '../components/Swiper/Swiper'
+import { Tabs } from '../components/ui/Tabs'
+import Cards from '../components/ui/Cards'
+
 export default function Home() {
     return (
         <>
-            <main className="content">
-                <div>
-                    <h1>Bring your business online</h1>
-                    <h3>Bring your business online</h3>
-
-                    <div className="content-buttons">
-                        {/* <button>Start free trial</button>
-                        <button>Watch videos</button> */}
-                    </div>
+            <div className="content">
+                <div className="carousel">
+                    <SwiperInternal />
                 </div>
 
-                <div>{/* <Image src="" /> */}</div>
-            </main>
+                <div className="section-products">
+                    <Tabs />
+                    <Cards />
+                </div>
+            </div>
 
             <style jsx>
                 {`
                     .content {
                         background-color: var(--palette-common-white);
-                        display: flex;
+                        padding: 0 10%;
+                    }
+
+                    .carousel {
+                        overflow: hidden;
                     }
                 `}
             </style>

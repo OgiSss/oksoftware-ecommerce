@@ -11,16 +11,20 @@ export default css.global`
         --palette-background-backdrop: rgba(0, 0, 0, 0.5);
         --palette-common-white: #fff;
         --palette-common-black: #000;
+        --swiper-theme-color: var(--palette-common-white);
+
+        --image-background-primary: #f1eef3;
+        --image-background-secondary: ##f1eff2;
     }
 
     body {
         color: var(--palette-text-primary);
+
         background-color: var(--palette-background-default);
         /* MEMO: inspired by https://web.dev/prefers-color-scheme/#smooth-transitions-between-modes */
         transition: color var(--duration) var(--timing),
             background-color var(--duration) var(--timing);
-
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: ${theme.typography.fontWeightRegular};
         line-height: 1.7;
     }
